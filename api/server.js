@@ -2,6 +2,14 @@ const express = require('express')
 const {graphqlHTTP} = require('express-graphql')
 const graphql = require('graphql')
 const { Client } = require('pg')
+const joinMonster = require('join-monster')
+const client = new Client({
+  host: "localhost",
+  user: "Suraj",
+  database: "Suraj"
+})
+client.connect()
+
 const QueryRoot = new graphql.GraphQLObjectType({
   name: 'Query',
   fields: () => ({
