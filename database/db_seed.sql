@@ -1,0 +1,1 @@
+INSERT INTO exercise (id, name, description) VALUES (1, 'Bicep Curl', 'Standing dumbell curl');
